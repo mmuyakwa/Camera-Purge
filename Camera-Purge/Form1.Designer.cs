@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.source_txt = new System.Windows.Forms.TextBox();
             this.source_btn = new System.Windows.Forms.Button();
             this.destinationFoto_txt = new System.Windows.Forms.TextBox();
@@ -72,7 +73,7 @@
             this.destinationFoto_btn.Name = "destinationFoto_btn";
             this.destinationFoto_btn.Size = new System.Drawing.Size(121, 23);
             this.destinationFoto_btn.TabIndex = 3;
-            this.destinationFoto_btn.Text = "&Foto Destination";
+            this.destinationFoto_btn.Text = "&Photo Destination";
             this.destinationFoto_btn.UseVisualStyleBackColor = true;
             this.destinationFoto_btn.Click += new System.EventHandler(this.destination_btn_Click);
             // 
@@ -141,6 +142,7 @@
             this.Controls.Add(this.destinationFoto_txt);
             this.Controls.Add(this.source_btn);
             this.Controls.Add(this.source_txt);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
             this.Text = "Camera-Purge";
             this.ResumeLayout(false);
